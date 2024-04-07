@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: eggsample-spam
+Version: 0.0.0
+Requires-Dist: eggsample

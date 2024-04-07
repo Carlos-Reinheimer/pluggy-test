@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: eggsample
+Version: 0.0.0
+Requires-Dist: pluggy<1.0,<=0.3

@@ -1,0 +1,11 @@
+setup.py
+eggsample/__init__.py
+eggsample/hookspecs.py
+eggsample/host.py
+eggsample/lib.py
+eggsample.egg-info/PKG-INFO
+eggsample.egg-info/SOURCES.txt
+eggsample.egg-info/dependency_links.txt
+eggsample.egg-info/entry_points.txt
+eggsample.egg-info/requires.txt
+eggsample.egg-info/top_level.txt
