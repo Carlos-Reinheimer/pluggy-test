@@ -1,0 +1,11 @@
+setup.py
+texteditorapplication/__init__.py
+texteditorapplication/hookspecs.py
+texteditorapplication/host.py
+texteditorapplication/lib.py
+texteditorapplication.egg-info/PKG-INFO
+texteditorapplication.egg-info/SOURCES.txt
+texteditorapplication.egg-info/dependency_links.txt
+texteditorapplication.egg-info/entry_points.txt
+texteditorapplication.egg-info/requires.txt
+texteditorapplication.egg-info/top_level.txt
