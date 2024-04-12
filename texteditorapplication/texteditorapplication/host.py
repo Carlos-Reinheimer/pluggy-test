@@ -46,15 +46,21 @@ class TextEditor():
             data = self.text.get(0.0, tk.END)
             file.write(data)
 
-    def run_editor(self):
-        gui = tk.Tk()
-        gui.title = "Text Editor"
-        gui.geometry("600x600")
-        status = tk.Text(gui)
-        status.insert(0.0, "teste")
+    def update_text(self, event):
+        character_count = self.hook.count_characters(text=self.text.get(0.0, tk.END))
+        self.label.config(text=f'Character count: {character_count}')
 
-        self.text = tk.Text(gui)  # Create text variable here
+    def run_editor(self):
+        self.root = tk.Tk()
+        self.root.title = "Text Editor"
+        self.root.geometry("600x600")
+
+        self.text = tk.Text(self.root)  # Create text variable here
+        self.text.bind('<Key>', self.update_text)  # Bind update on key release
         self.text.pack()
+
+        self.label = tk.Label(self.root, text=('Character count: ', 0))
+        self.label.pack(padx=20, pady=20)
 
         myMenu = tk.Menu()
         fileMenu = tk.Menu()
@@ -65,14 +71,7 @@ class TextEditor():
         fileMenu.add_command(label='Exit', command=quit)
         myMenu.add_cascade(label='File', menu=fileMenu)
 
-        # Plugin menu (if needed)
-        pluginMenu = tk.Menu()
-        # Add commands here to trigger plugin execution using your plugin manager's API
-        # Example: pluginMenu.add_command(label='Run Character Count', command=lambda: self.run_plugin("count_characters"))
-
-        myMenu.add_cascade(label='Plugins', menu=pluginMenu)  # Add plugin menu if needed
-        gui.config(menu=myMenu)
-        gui.mainloop()
+        self.root.mainloop()
     
 if __name__ == "__main__":
     main()

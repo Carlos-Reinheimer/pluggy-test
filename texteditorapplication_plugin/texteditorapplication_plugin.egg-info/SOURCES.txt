@@ -1,0 +1,8 @@
+setup.py
+texteditorapplication_plugin.py
+texteditorapplication_plugin.egg-info/PKG-INFO
+texteditorapplication_plugin.egg-info/SOURCES.txt
+texteditorapplication_plugin.egg-info/dependency_links.txt
+texteditorapplication_plugin.egg-info/entry_points.txt
+texteditorapplication_plugin.egg-info/requires.txt
+texteditorapplication_plugin.egg-info/top_level.txt

@@ -3,18 +3,9 @@ import pluggy
 hookspec = pluggy.HookspecMarker("texteditorapplication")
 
 @hookspec
-def eggsample_add_ingredients(ingredients: tuple):
-    """Have a look at the ingredients and offer your own
+def count_characters(text):
+    """Counts the characters of the text
     
-    :param ingredients: the ingredients
-    :return: a list of ingredients
+    :param text: data text from the file
+    :return: an integer value representing the number of characters
     """
-
-@hookspec
-def eggsample_prep_condiments(condiments: dict):
-    """Reorganize the condiments tray to your heart's content
-    
-    :param condiments: some souces and stuff
-    :return: a witty comment about your activity
-    """
-

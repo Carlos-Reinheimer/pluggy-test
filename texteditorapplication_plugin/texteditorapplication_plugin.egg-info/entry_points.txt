@@ -1,0 +1,2 @@
+[texteditorapplication]
+plugin = texteditorapplication_plugin
